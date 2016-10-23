@@ -1,0 +1,54 @@
+package koizuka;
+
+{$R *.res}
+{$R '..\AsyncSockets.dcr'}
+{$R '..\ClickableView.dcr'}
+{$R '..\SmfPlayer.dcr'}
+{$R '..\SocketIrc.dcr'}
+{$R '..\TrayIcon.dcr'}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'koizuka''s components'}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  vcl;
+
+contains
+  AsyncHttp in '..\AsyncHttp.pas',
+  AsyncSockets in '..\AsyncSockets.pas',
+  Base64 in '..\Base64.pas',
+  CharSetDetector in '..\CharSetDetector.pas',
+  ChatFilter in '..\ChatFilter.pas',
+  ClickableView in '..\ClickableView.pas',
+  httpAuth in '..\httpAuth.pas',
+  IrcClient in '..\IrcClient.pas',
+  Kanjis in '..\Kanjis.pas',
+  md5 in '..\md5.pas',
+  SmfPlayer in '..\SmfPlayer.pas',
+  SocketIrc in '..\SocketIrc.pas',
+  TrayIcon in '..\TrayIcon.pas',
+  UrlUnit in '..\UrlUnit.pas',
+  MenuBar in 'MENUBAR.PAS';
+
+end.

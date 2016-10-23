@@ -1,0 +1,42 @@
+# P,無視パターン名,無視開始文字列,無視終了文字列
+P,TEST,"なり","。"
+P,BUGREPO,"<font color=red>*</font>"
+P,YODIARY,"<FONT color=""#AAAAAA"" size=-1>","</FONT>"
+P,MUCHY.COM,"<p align=""center""><a href=""/advertise/click_ad.cgi?","</p>"," [CGI EXEC BUSY] -->","</p>"
+P,NAKATA.NET,"<!-- AdSpace","<!-- /AdSpace -->"
+P,COMJONG,"<br>count: <a href=","</a>","<!--JS ACCESS ANALYZER","</font>"
+P,OPENTEST,"ここから","ここまで"
+P,UPBOARD,"<font size=-1 color=",">"
+P,KANO-COUNTER,"<img src=""/~tkano/temp/count_index.gif""",">"
+P,impress,"<html>","<!--●●●●●トップニュース●●●●●-->","<!--★★★テキストリンク[1][2][3][4]★★★-->","<!--●●●●●お知らせ●●●●●-->","<!--●●●●●ヘッドライン・FROM impress●●●●●-->","<!--●●●●●ヘッドライン・Windows用オンラインソフト●●●●●-->","<!--●●●●●Today's News 終わり●●●●●-->","</html>"
+P,SLASHDOT,"<!-- start template: ID 117, header;misc;default -->","end ad code -->","<!-- end mainmenu block -->","<!-- begin sectionindex block -->","<A HREF=""http://slashdot.jp/pollBooth.pl?section=","<!-- end template:","<strong><A HREF=""http://slashdot.jp/journal.pl?op=top"">","<!-- end template: ID 121, index;index;default -->","<P><B><A HREF=""http://slashdot.jp/index.pl?issue=20020201&mode=","<!-- end template: ID 114, getOlderStories;misc;default -->","<!-- start template: ID 169, storylink;index;default -->","<!-- end template: ID 169, storylink;index;default -->"
+P,SHIROW,"<!-- start AD -->","<!-- end AD -->"
+
+# D,デフォルトURL頭部分(http://は除く),パターン名
+D,www.koizuka.jp/~koizuka/ignore.html,TEST
+D,bug.dwango.co.jp/br.cgi,BUGREPO
+D,http://www.namikaze.org/npdd/gdr/yodiary.shtml,YODIARY
+D,muchy.com/,MUCHY.COM
+//D,www.nakata.net/,NAKATA.NET
+D,comjong.com/,COMJONG
+D,www.koizuka.jp/~koizuka/opentest.html,OPENTEST
+
+P,TEST2,"<BODY","</BODY>"
+D,www.and.or.jp/~kamei/,TEST2
+
+D,aki/abell-c1.html,ABELL
+D,cgi.members.interq.or.jp/tokyo/denchi/cgi-bin/upboard/upboard.cgi,UPBOARD
+
+P,PLANETQUAKE,"<table cellspacing","</table>"
+"<!--REF=""http://adclick.gamespy.com/accipiter/adclick.html","<-->"
+D,www.planetquake.com/ztn/nvreffix/nvreffix.html,PLANETQUAKE
+D,cgi3.tky.3web.ne.jp/~tkano/,KANO-COUNTER
+D,www.watch.impress.co.jp/,impress
+
+D,slashdot.jp/,SLASHDOT
+D,www.koizuka.jp/~koizuka/slashdot.html.gz,SLASHDOT
+D,stwo.hp.infoseek.co.jp/shirow/index.html,SHIROW
+
+P,JUGEM,"<channel rdf:about=""http://users",">"
+D,.jugem.cc/,JUGEM
+D,.jugem.jp/,JUGEM

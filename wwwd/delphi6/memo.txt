@@ -1,0 +1,6 @@
+14:46:11 (gekiuchi hkiuchi p3p079.sun-inet.or.jp) PRIVMSG #Datula:WSATRY_AGAIN on socket 65535
+14:46:22 (_dat_ mon ns.isoplanning.co.jp) PRIVMSG #datula: [megalith] VB‚Í4.0ˆÈ~Žg‚Á‚½‚±‚Æ‚È‚¢
+14:46:23 (koizuka koizuka ) PRIVMSG #Datula:‚ÞATRY_AGAIN‚¶‚á‚Æ
+14:46:28 (koizuka koizuka ) PRIVMSG #Datula:transparent proxy‚Å‚à‚ ‚é‚ñ‚©‚¢‚È
+14:46:41 (koizuka koizuka ) PRIVMSG #Datula:WWWD‚Ì˜b‚·‚æ‚Ë > gekiuchi‚³‚ñ
+14:46:46 (gekiuchi hkiuchi p3p079.sun-inet.or.jp) PRIVMSG #Datula:WSAEADDRNOTAVAIL on socket 268

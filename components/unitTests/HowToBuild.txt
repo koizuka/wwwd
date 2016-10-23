@@ -1,0 +1,7 @@
+dunitはここのやつを使っています。
+http://sourceforge.net/projects/dunit/
+
+(同名のものが日本にもあるので注意)
+
+バージョンは4.1.2を使っています。
+Delphi6でのみビルド確認をしています。

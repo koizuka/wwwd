@@ -1,0 +1,176 @@
+2003-01-31 23:52 JST koizuka
+ * 2, 3のときにSetForegroundWindow
+
+2003-01-31 23:30 JST koziuka
+ *   1: StartCheckAction.Execute;
+ *   2: NewItemAction.Execute;
+ *   3: GetFromBrowserAction.Execute;
+
+2003-01-31 22:05 JST koziuka
+ * message=32768, wparam=0 で、次の未読(実験)
+
+2002-03-24 22:35 JST koizuka
+ * zlib 1.1.4に
+
+2002-03-24 21:20 JST koizuka
+ * SaveToFileで念のため、AllToText内で例外が発生したときにファイルが失われることがないように順序を調整してみた。
+
+2002-03-01 11:33 JST koizuka
+ * スキップ設定の変更をしたときにトレイアイコンが変化しなかったbug fix( wc_main.pas: FillSkipでUpdateIconCountを呼び忘れていた )
+
+2002-02-05 00:00 JST koizuka
+ * HeaderDialog に THtmlSize を持つバージョンを $IFDEF HEADER_OWN_HTMLSIZE で混ぜた
+
+2002-01-27 01:32 JST koizuka
+ * 「チェック開始後に自動的に開く」で、未読かつチェック中でないアイテムがあるとアイテムを開かないことがあったbug fix
+
+2002-01-21 12:55 JST koizuka
+ * 「中止」のときにしかdns cache clearしてなかったのをStop時に常にクリアするようにした
+
+2002-01-20 20:02 JST koizuka
+ * グループの展開状態をdatに保存するようにした(Expanded)
+
+2002-01-20 17:46 JST koizuka
+ * CRC判定再修正
+
+2002-01-20 17:38 JST koizuka
+ * CRCが記録されていないアイテムはCRC判定が行われなくなっていたbug fix
+ * CRCが記録されているアイテムはCRC無視の設定でも更新判定されていたbug fix
+ * アイテムのプロパティでチェックするURLを変更したときにはETag, CRCを忘れるようにした。
+
+2002-01-20 17:00 JST koizuka
+ * アイテムのプロパティに ETag表示フィールド追加。
+
+2002-01-20 16:45 JST koizuka
+ * CheckItemにUpdateReasonプロパティを追加。ファイルには保存していないが
+   前回更新理由がアイテムのプロパティダイアログで確認できる。
+
+2002-01-15 07:04 JST koizuka
+ * 複数のURLを開く場合に最後の一つしか既読にならなくなっていたbug fix
+
+2002-01-13 15:40 JST koizuka
+ * EndUpdateを全部finallyに入れた
+
+2002-01-13 13:50 JST koizuka
+ * チェック開始後、自動的に開く判定条件の未読個数を別途指定するようにした。
+
+2001-12-16 00:51 JST koizuka
+ * いくつかのクラスのdestructorにinherited忘れがあったので追加(TObject直下のクラスは呼ばなくても無害だが、今後別のものから継承するように書き直すとはまるので安全策)
+ * TWwwdCheckItemContainerにいくつかの機能を実装集約。
+
+2001-12-15 07:25PM JST koizuka
+ * TItemListにToDatText, ToUrlTextを追加し、クリップボードへのコピー処理ではこれらを呼ぶようにした
+
+2001-12-15 07PM JST koizuka
+ * wwwddata.pas: ToUtf8関数をDelphi6にある関数と同名のUTF8Encodeに改名し、Delphi6ならばシステム提供のものを使うようにした。
+
+2001-12-15 05PM JST koizuka
+ * AssignGroupでSetDirtyしてなかったのでアイテムの削除をして終了すると復活してしまっていたbug fix
+ * TWwwdCheckItemContainer classを作り、アイテムリストはTStringListではなくこちらで管理するようにした
+ * プロジェクトメンバにChangeLog.txtも追加
+
+2001-12-07 06AM GMT koizuka
+ * StopでDNSキャッシュをクリアしてみた
+
+2001-12-01 08AM GMT koizuka
+ * ListView側でもBackSpaceで上グループへ移動できるようにした
+
+2001-11-30 09AM GMT koizuka
+ * HeaderDialogを出した後にそのアイテムを右クリックすると全コマンドが無効になってしまっていたbug fix
+
+2001-11-27 11PM GMT koizuka
+ * CheckGroupをModel/View分離など、リファクタリング.
+ * 選択状態などに基づいた状態表示関連を多少整理
+
+2001-11-26 06PM GMT koizuka
+ * TCheckGroup.FromTreeNodeを作り、TTreeNodeとの接続を隠蔽
+ * TCheckGroup.AddRef/RemoveRefをIncItem, DecItemに改名
+
+2001-11-26 01PM GMT koizuka
+ * メニュー内のグループ一覧の階層インデント対応
+ * リファクタリング: CheckItemのModel/View分離(CheckItemViewListItem.pas追加)
+
+2001-11-25 10AM GMT koizuka
+ * DoCheckReadyItemsをhttp1dataの直前に持ってきた(デバッグのときに追いやすくするため)
+
+2001-11-25 01AM GMT koizuka
+ * CheckItem.Stateが状態とスロット番号の二重の意味を持っていたのでStateとSlotに分離した。
+ * またCheckItem.Stateをprivateにし、publicには状態ごとの確認と設定用のメソッド群を作った。
+
+2001-11-24 02PM GMT koizuka
+ * エンバグでアイテムが削除できなくなってた問題を回避
+
+2001-11-24 01PM GMT koizuka
+ * リファクタリングの続き
+ * (データ管理をWwwdData.pasに移動、など)
+
+2001-11-23 06PM GMT koizuka
+ * リファクタリング続き
+
+2001-11-23 04PM GMT koizuka
+ * リファクタリング続き
+
+2001-11-23 02PM GMT koizuka
+ * リファクタリング続き
+
+2001-11-23 01PM GMT koizuka
+ * リファクタリング続き
+
+2001-11-22 06PM GMT koizuka
+ * 続き
+
+2001-11-22 06PM GMT koizuka
+ * UnitTestなしのリファクタリング(怖い)
+ * UIと処理が結びついてるから困るなあ。できれば分離したい
+
+2001-11-22 03PM GMT koizuka
+ * FOptions.SaveRegistry呼び忘れ
+
+2001-11-22 03PM GMT koizuka
+ * オプション設定データ関連をOptions.pasに分離
+
+2001-11-15 04AM GMT koizuka
+ * チェック終了時に未読を開かなくなっていたbug fix
+
+2001-11-10 02PM GMT koizuka
+ * 起動時に最小化されていて、AutoOpen trueで未読があるときに例外発生バグfix
+
+2001-11-10 02PM GMT koizuka
+ * CheckItemのpublicフィールドをいくらかprivateに移動
+ * AutoOpenの処理を「NextAction.Execute」に変更
+
+2001-09-14 06PM koizuka
+ * LastModified順ソートを指定したときに更新日時でまずソートしてしまっていたが、これは間違いだった。
+ * LastModified欄をDate Decodeした上で比較し、一致したら文字列比較とするようにした。
+
+2001-8-24 05AM JST koizuka
+　ignoredef: TCUPの閉じ修正(初回変化してしまうが)
+　ignoredef: freewebがinfoseekにドメイン変更したため、弥助さん提供のパターン追加
+
+2001-8-17 05PM JST koizuka
+　User-AgentがWWWD/0.01に戻ってしまっていたbug fix
+　こっそり再公開
+
+
+2001-8-17 10PM JST koizuka
+　公開用
+
+
+2001-8-17 01PM JST koizuka
+　ステータスバーの動作状況エリアの幅が足りていなかったのでとりあえず広げた
+
+
+2001-8-17 08AM JST koizuka
+　チェック中に同時接続数を減らしたときのbug fix
+　ごみ箱のグループ名の言語の違いをファイル読み込み時にある程度吸収(暫定策)
+
+
+2001-8-16 11PM JST koizuka
+  多少翻訳しやすいように調整
+
+
+2001-8-16 10AM JST koizuka
+　オプション設定のチェックタブに同時接続数欄を新設し、接続数を変更可能にした。
+　レジストリにMaxConnection追加。
+
+　オプション設定およびグループのプロパティで問題のある入力があるとダイアログで警告を出すようにした。

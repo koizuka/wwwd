@@ -1,0 +1,101 @@
+ChangeLog.txt for cvs.koizuka.jp/components
+2006-01-05 21:24 JST koizuka
+Base64.pas - 更新
+ * DecodeBase64追加(笑)
+
+2005-06-19 20:58 JST koizuka
+UrlUnit.pas - 更新
+  SplitHostPort関数で user:pass@host:port 形式での記述を user:pass@hostとportに分割するようにした
+AsyncHttp.pas - 更新
+  Proxy プロパティに user:pass@host 形式でproxy指定を設定できるようにした。ただし認証処理自体は行わない(httpAuthを使うこと)
+
+2005-04-09 17:18 JST koizuka
+UrlUnit.pas - 更新
+ * EncodeRFC822Date追加
+
+2003-08-27 23:32 JST koizuka
+ * TrayIcon.pas Tipが63バイトを超えるときにバッファオーバーフローを起こしていたのを修正(切り落とし)
+
+2001/12/04? koizuka
+CharSetDetector.pas - 更新
+  IgnoreJis プロパティ追加。JISは無視する。JISとEJIS/EUC混在のときにJIS以外の部分を判別する目的。
+
+2002/08/08(Thu) 14:31 JST koizuka
+TrayIcon.pas - 更新
+  Shell_NotifyIcon がシステムの負荷などで失敗することがあるらしいので、3回まで挑戦するようにした。
+
+2001/12/05(Wed) 07:32 JST koizuka
+UrlUnit.pas - 更新
+  DecodeRFC822Dateで変換できないものは積極的に例外 EConvertErrorをraiseするようにした
+  DecodeRFC822Dateでメモリリークがあったbug fix
+  SplitUrlで user@host 形式をpathではなく sID, sHostに展開するようにした
+  ComplementURLでrelativeのほうにuseridを指定したときにはbaseのpasswordを利用しないようにした
+
+
+2001/12/04(Tue) 17:17 JST koizuka
+UrlUnit.pas - 更新
+  SplitHostPortのポートサービス名指定が機能していなかったbug fix
+  SplitUrlでパスワード部に @ まで付いてしまっていたbug fix
+  ComplementURLでゴミのelse文があったせいでprotocolが抜けていたbug fix
+
+
+2001/12/04(Tue) 04:51 JST koizuka
+CharSetDetector.pas - 更新
+  巨大データ用高速化とリファクタリング
+
+
+2001/12/02(Sun) 20:01 JST koizuka
+CharSetDetector.pas - 更新
+  UTF-8判定と読み込みに対応し、自動判定を強化, GetProbableCharSet追加
+
+
+2001/12/02(Sun) 17:29 JST koizuka
+ClickableView.pas - 更新
+  異常文字があると無限ループすることがあったbug fix
+
+
+2001/12/02(Sun) 07:36 JST koizuka
+ClickableView.pas - 更新
+  巨大データ用高速化とリファクタリング
+  TextLengthプロパティ追加
+
+
+2001/11/12 13:59 JST koizuka
+DropURLListTargetV4.pas - 追加
+
+
+2001/09/27 18:18 JST koizuka
+Kanjis.pas - 更新
+  半角カナ小文字のァィゥェォの変換テーブルが200hずれていたために化けていた点修正
+
+
+2001/8/16 20:12 JST koizuka
+AsyncSockets.pas - 更新
+  Delphi5と6でINADDR_NONEの型の符合の有無が違うので、キャストで対応
+
+
+2001/8/12 22:28 JST koizuka
+ChatFilter.pas - 更新
+  足りなかった文字追加
+
+
+2001/8/12 18:38 JST koizuka
+Sockets.pas - 削除
+AsyncSockets.pas - 追加
+AsyncHttp.pas - 更新
+SocketIrc.pas - 更新
+  Sockets.pasをAsyncSockets.pasに改名
+
+ClickableView.pas - 更新
+  ChangeSelで引数の値範囲をチェックするようにした
+  Delphi6仮対応
+
+
+2001/06/28 koizuka
+Kanjis.pas - 更新
+  半角カナ対応処理の比較定数をconstに移動
+
+
+2001/4/29 18:58 JST koizuka
+  UrlUnit.pas 追加, Sockets.pas URL, RFC822関数を移動してきて、ComplementURL関数新設
+

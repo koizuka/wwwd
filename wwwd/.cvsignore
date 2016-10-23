@@ -1,0 +1,8 @@
+*.map
+*.exe
+*.dsk
+*.drc
+*.bak
+*.dcu
+*.~*
+.#*
