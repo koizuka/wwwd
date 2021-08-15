@@ -1,0 +1,123 @@
+[PackageForTheWeb]
+Version=2.0
+
+[Options]
+Title=WWWD
+Company=A.Koizuka / Bio_100%
+CompanyEMail=koizuka@ss.iij4u.or.jp
+BasePath=G:\devs\wwwd\setup\WWWD\Custom-10240KB
+ImportPath=
+UseRTF=0
+SaveFiles=0
+SubFolders=1
+ApplicationName=WWWD
+Description=WWWD(WWW Dispatcher)
+Comments=このソフトウェアはフリーソフトです。
+Notice=Copyright 1998-2000 A.Koizuka / Bio_100%, yosi
+Version=2002-5-1
+OutputSpec=g:\devs\wwwd\setup\SetWWWD.exe
+GUIDs=0
+Type=2
+Compress=1
+Sign=0
+Transfer=0
+Files=11
+
+[Engine]
+Setup=DISK1\SETUP.EXE
+
+[Runtime]
+Welcome=
+License=
+Prompt=WWWDをインストールします。よろしいですか?
+Password=
+DefaultPath=
+Language=Japanese2
+WindowStyle=0
+Options=2
+Execute=DISK1\SETUP.EXE
+CmdLine=/SMS
+AllowChangeTarget=1
+AllowDelete=0
+LaunchEXE=1
+
+[Extension]
+Server=
+Calls=0
+
+[Code Signing]
+CompanyURL=
+SpecFile=
+KeyFile=
+Method=0
+
+; ~~~~~~~~~~ File Section ~~~~~~~~~~~
+[SubFolders]
+Count=1
+Folder1=DISK1
+
+[File 1]
+Name=DISK1.ID
+Path=G:\devs\wwwd\setup\WWWD\Custom-10240KB\DISK1\
+Flags=1
+Disk=0
+
+[File 2]
+Name=SETUP.EXE
+Path=G:\devs\wwwd\setup\WWWD\Custom-10240KB\DISK1\
+Flags=589825
+Disk=0
+
+[File 3]
+Name=SETUP.INI
+Path=G:\devs\wwwd\setup\WWWD\Custom-10240KB\DISK1\
+Flags=1
+Disk=0
+
+[File 4]
+Name=SETUP.INS
+Path=G:\devs\wwwd\setup\WWWD\Custom-10240KB\DISK1\
+Flags=2097153
+Disk=0
+
+[File 5]
+Name=SETUP.ISS
+Path=G:\devs\wwwd\setup\WWWD\Custom-10240KB\DISK1\
+Flags=1
+Disk=0
+
+[File 6]
+Name=SETUP.PKG
+Path=G:\devs\wwwd\setup\WWWD\Custom-10240KB\DISK1\
+Flags=1
+Disk=0
+
+[File 7]
+Name=_INST32I.EX_
+Path=G:\devs\wwwd\setup\WWWD\Custom-10240KB\DISK1\
+Flags=524289
+Disk=0
+
+[File 8]
+Name=_ISDEL.EXE
+Path=G:\devs\wwwd\setup\WWWD\Custom-10240KB\DISK1\
+Flags=589825
+Disk=0
+
+[File 9]
+Name=_SETUP.1
+Path=G:\devs\wwwd\setup\WWWD\Custom-10240KB\DISK1\
+Flags=2097153
+Disk=0
+
+[File 10]
+Name=_SETUP.DLL
+Path=G:\devs\wwwd\setup\WWWD\Custom-10240KB\DISK1\
+Flags=655377
+Disk=0
+
+[File 11]
+Name=_SETUP.LIB
+Path=G:\devs\wwwd\setup\WWWD\Custom-10240KB\DISK1\
+Flags=2097153
+Disk=0

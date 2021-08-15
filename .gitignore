@@ -64,3 +64,22 @@ __recovery/
 
 # Castalia statistics file (since XE7 Castalia is distributed with Delphi)
 *.stat
+
+CVS
+wwwd/archive/
+wwwd/delphi6/
+wwwd/english/
+wwwd/html/
+wwwd/icon-fue/
+wwwd/koizuka/
+wwwd/obj/
+wwwd/org/
+wwwd/pattest/
+wwwd/setup/WWWD/
+wwwd/stable/
+wwwd/testdata/
+wwwd/testing/
+wwwd/tree-icon/
+wwwd/zlib/*.obj
+wwwd/参考/
+

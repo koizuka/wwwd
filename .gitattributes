@@ -1,0 +1,11 @@
+*.exe binary
+*.bmp binary
+*.ico binary
+*.wav binary
+*.res binary
+
+*.pas diff=sjis
+*.dpr diff=sjis
+*.ddp binary
+*.txt diff=sjis
+
